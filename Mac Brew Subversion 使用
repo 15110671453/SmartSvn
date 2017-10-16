@@ -1,0 +1,1287 @@
+Mac Brew Subversion 使用 
+
+
+原由 :
+  原先 使用  莲花 客户端 但是 收费  ，过了 试用期
+
+  先在 干脆 卸载 使用 命令行 subversion
+
+第一步 :  确定选择 要下载 使用的 subversion 版本
+
+
+	 macserver1:~ admindyn$ brew search subversion
+	==> Searching local taps...
+	subversion                subversion@1.8
+	==> Searching taps on GitHub...
+	==> Searching blacklisted, migrated and deleted fo
+	macserver1:~ admindyn$ 
+安装中 发现  更新了 HomeBrew的 版本 然后才开始安装 subverson
+
+	检查 当前 xcodebuild 版本
+	Last login: Mon Oct 16 10:39:14 on ttys000
+	macserver1:~ admindyn$ xcodebuild -version
+	Xcode 8.3.2
+	Build version 8E2002
+	macserver1:~ admindyn$ 
+
+更新 HomeBrew的 记录
+	Updating Homebrew...
+	==> Downloading https://homebrew.bintray.com/bottles-portable/portable-ruby-2.3.3.leopard_64.bottle.1.tar.gz
+	==> Pouring portable-ruby-2.3.3.leopard_64.bottle.1.tar.gz
+	==> Auto-updated Homebrew!
+	Updated 3 taps (caskroom/cask, homebrew/core, homebrew/php).
+	==> New Formulae
+abyss
+azure-cli@1
+beast
+bench
+bettercap
+bowtie2
+bwfmetaedit
+bzt
+clac
+configen
+crc32c
+duc
+dvanalyzer
+fn
+gdcm
+homebrew/php/phan@0.9
+homebrew/php/php54-molten
+homebrew/php/php54-trader
+homebrew/php/php54-xdiff
+homebrew/php/php55-molten
+homebrew/php/php55-trader
+homebrew/php/php55-xdiff
+homebrew/php/php56-ice
+homebrew/php/php56-molten
+homebrew/php/php56-trader
+homebrew/php/php56-xdiff
+homebrew/php/php70-ice
+homebrew/php/php70-molten
+homebrew/php/php70-mosquitto
+homebrew/php/php70-sodium
+homebrew/php/php70-trader
+homebrew/php/php70-xdiff
+homebrew/php/php71-gnupg
+homebrew/php/php71-ice
+homebrew/php/php71-molten
+homebrew/php/php71-mosquitto
+homebrew/php/php71-sodium
+homebrew/php/php71-trader
+homebrew/php/php71-xdiff
+homebrew/php/php72-molten
+homebrew/php/php72-mosquitto
+homebrew/php/php72-mustache
+homebrew/php/php72-trader
+iron-functions
+json-table
+landscaper
+libbitcoin-blockchain
+libbitcoin-node
+libbitcoin-server
+liquid-dsp
+mecab-unidic-extended
+msgpuck
+pdfpc
+precomp
+ssh-vault
+xmrig
+ykman
+zim
+==> Updated Formulae
+abcmidi
+activemq
+activemq-cpp
+aespipe
+akamai
+algernon
+allegro
+allure
+amazon-ecs-cli
+angular-cli
+ansible
+ansible-cmdb
+ansible-lint
+apache-arrow
+apache-brooklyn-cli
+apache-geode
+apache-opennlp
+apache-zeppelin
+apibuilder-cli
+apktool
+app-engine-go-64
+app-engine-java
+arangodb
+armadillo
+artifactory
+asdf
+ats2-postiats
+aubio
+augeas
+autoconf-archive
+avro-tools
+aws-elasticbeanstalk
+aws-sdk-cpp
+awscli
+axel
+azure-cli
+babl
+bandcamp-dl
+baobab
+baresip
+bartycrouch
+bash-preexec
+bash-snippets
+bazel
+bear
+bento4
+binaryen
+binutils
+bison ✔
+bison@2.7
+bit
+bitrise
+blahtexml
+bltool
+bluepill
+bnd
+botan
+bower
+brotli
+buildifier
+buku
+bulk_extractor
+bullet
+byobu
+caddy
+caf
+cake
+camlp5
+cargo-completion
+carthage
+cassandra
+ccm
+certbot
+certstrap
+cfitsio
+cfr-decompiler
+cgal
+chakra
+chapel
+cheat
+checkstyle
+chezscheme
+chromedriver
+chronograf
+cimg
+citus
+clhep
+cli53
+clojure
+clojurescript
+cmake
+cmark
+cnats
+cockroach
+coffeescript
+conan
+conjure-up
+convox
+coreutils
+cppad
+cppcheck
+cputhrottle
+credstash
+crystal-lang
+curl
+cutter
+cvs
+cython
+dbus
+dbxml
+dc3dd
+dcm2niix
+dcmtk
+dep
+derby
+dhall-json
+diff-pdf
+diffoscope
+digdag
+direnv
+dlib
+dmd
+dnscrypt-proxy
+dnscrypt-wrapper
+dnsmasq
+dnsviz
+docfx
+docker
+docker-cloud
+docker-completion
+docker-machine-parallels
+docker2aci
+doitlive
+dos2unix
+dovecot
+dshb
+dspdfviewer
+dtc
+dwarf
+efl
+ejabberd
+elasticsearch
+elixir
+elvish
+emp
+emscripten
+enigma
+entr
+erlang
+etcd
+etsh
+evince
+exa
+exact-image
+exim
+expect
+exploitdb
+eye-d3
+faac
+faad2
+faas-cli
+fastd
+fb-client
+fd
+fdroidserver
+feh
+fibjs
+file-roller
+filebeat
+fio
+firebase-cli
+flow ✔
+fluent-bit
+fluid-synth
+folly
+fontconfig
+fonttools
+fox
+freetds
+freetype ✔
+frugal
+fuse-emulator
+fwup
+fzf
+gandi.cli
+gauge
+gcc@5
+gcviewer
+gdk-pixbuf
+geckodriver
+geographiclib
+geoserver
+get_iplayer
+getdns
+geth
+getmail
+ghostscript
+git
+git-annex
+git-ftp
+git-lfs
+git-number
+git-town
+gitbucket
+giter8
+gjs
+glade
+glib ✔
+glibmm
+glide
+globus-toolkit
+gmic
+gnatsd
+gnupg
+gnupg-pkcs11-scd
+go
+go@1.4
+go@1.8
+gobject-introspection
+godep
+goenv
+gofabric8
+gomplate
+goocanvas
+googler
+gopass
+gphoto2
+gprof2dot
+gpsd
+gradle
+grafana
+grails
+grib-api
+grip
+groonga
+grpc
+gsmartcontrol
+gsoap
+gst-editing-services
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gst-python
+gst-rtsp-server
+gst-validate
+gstreamer
+gtk+3
+gtk-doc
+gtk-gnutella
+gtkextra
+gtkmm3
+gtksourceview3
+gucharmap
+gwt
+harfbuzz
+haxe
+help2man
+heroku
+hevea
+hexedit
+hg-fast-export
+hh
+hledger
+homebank
+homebrew/php/arcanist
+homebrew/php/codeception
+homebrew/php/composer
+homebrew/php/envoy
+homebrew/php/phan
+homebrew/php/phan@0.8
+homebrew/php/phive
+homebrew/php/php-code-sniffer
+homebrew/php/php-cs-fixer
+homebrew/php/php54-http
+homebrew/php/php54-ioncubeloader
+homebrew/php/php54-sodium
+homebrew/php/php55-grpc
+homebrew/php/php55-http
+homebrew/php/php55-ioncubeloader
+homebrew/php/php55-mongodb
+homebrew/php/php55-mosquitto
+homebrew/php/php55-sodium
+homebrew/php/php56-couchbase
+homebrew/php/php56-grpc
+homebrew/php/php56-http
+homebrew/php/php56-ioncubeloader
+homebrew/php/php56-mongodb
+homebrew/php/php56-mosquitto
+homebrew/php/php56-opcache
+homebrew/php/php56-phalcon
+homebrew/php/php56-sodium
+homebrew/php/php70 ✔
+homebrew/php/php70-ast
+homebrew/php/php70-couchbase
+homebrew/php/php70-gmp
+homebrew/php/php70-grpc
+homebrew/php/php70-intl
+homebrew/php/php70-ioncubeloader
+homebrew/php/php70-mailparse
+homebrew/php/php70-mcrypt
+homebrew/php/php70-mongodb
+homebrew/php/php70-opcache
+homebrew/php/php70-pcntl
+homebrew/php/php70-pdo-dblib
+homebrew/php/php70-pdo-pgsql
+homebrew/php/php70-phalcon
+homebrew/php/php70-pspell
+homebrew/php/php70-rdkafka
+homebrew/php/php70-snmp
+homebrew/php/php70-ssh2
+homebrew/php/php70-tidy
+homebrew/php/php71
+homebrew/php/php71-ast
+homebrew/php/php71-couchbase
+homebrew/php/php71-gmp
+homebrew/php/php71-grpc
+homebrew/php/php71-intl
+homebrew/php/php71-ioncubeloader
+homebrew/php/php71-mailparse
+homebrew/php/php71-mcrypt
+homebrew/php/php71-mongodb
+homebrew/php/php71-opcache
+homebrew/php/php71-pcntl
+homebrew/php/php71-pdo-dblib
+homebrew/php/php71-pdo-pgsql
+homebrew/php/php71-phalcon
+homebrew/php/php71-protobuf
+homebrew/php/php71-pspell
+homebrew/php/php71-rdkafka
+homebrew/php/php71-ref
+homebrew/php/php71-snmp
+homebrew/php/php71-ssh2
+homebrew/php/php71-tidy
+homebrew/php/php72
+homebrew/php/php72-apcu-bc
+homebrew/php/php72-ast
+homebrew/php/php72-couchbase
+homebrew/php/php72-gearman
+homebrew/php/php72-gmp
+homebrew/php/php72-grpc
+homebrew/php/php72-intl
+homebrew/php/php72-lua
+homebrew/php/php72-lzf
+homebrew/php/php72-mailparse
+homebrew/php/php72-mongodb
+homebrew/php/php72-msgpack
+homebrew/php/php72-opcache
+homebrew/php/php72-pcntl
+homebrew/php/php72-pdo-dblib
+homebrew/php/php72-pdo-pgsql
+homebrew/php/php72-pspell
+homebrew/php/php72-rdkafka
+homebrew/php/php72-redis
+homebrew/php/php72-ref
+homebrew/php/php72-snmp
+homebrew/php/php72-ssh2
+homebrew/php/php72-stats
+homebrew/php/php72-swoole
+homebrew/php/php72-tidy
+homebrew/php/php72-timecop
+homebrew/php/php72-timezonedb
+homebrew/php/php72-uv
+homebrew/php/php72-xxtea
+homebrew/php/php72-yac
+homebrew/php/php72-yaml
+homebrew/php/phpunit
+homebrew/php/phpunit@5.7
+homebrew/php/terminus
+hopenpgp-tools
+hugo
+hyper
+hyperscan
+i3
+ibex
+icdiff
+ice
+idutils
+imagemagick
+imagemagick@6
+imapsync
+influxdb
+influxdb@0.8
+ios-sim
+iozone
+ipfs
+ipython
+ipython@5
+iso-codes
+isync
+itstool
+jasper
+jbig2dec
+jenkins
+jenkins-lts
+jetty
+jetty-runner
+jfrog-cli-go
+jhipster
+jmeter
+joe
+jose
+jruby
+jsdoc3
+jsonnet
+jsonschema2pojo
+juju
+jvgrep
+kafka
+kawa
+kerl
+khal
+kibana
+kitchen-sync
+knot
+knot-resolver
+kobalt
+kompose
+kops
+kotlin
+kpcli
+krb5
+kubernetes-cli
+kubernetes-helm
+laszip
+launch
+launchdns
+ldc
+lean
+lean-cli
+lego
+lftp
+libav
+libbitcoin
+libbitcoin-explorer
+libcdr
+libcouchbase
+libdap
+libextractor
+libfabric
+libfaketime
+libgphoto2
+libhdhomerun
+libhttpseverywhere
+liblockfile
+libmatroska
+libmodplug
+libmowgli
+libmtp
+libnatpmp
+libngspice
+libofx
+libowfat
+libphonenumber
+libpng ✔
+libprotoident
+libqalculate
+libquicktime
+libraw
+libre
+librem
+librsvg
+libshout
+libsmi
+libsodium
+libsoup
+libspectre
+libspectrum
+libstfl
+libtcod
+libtensorflow
+libuecc
+libuv
+libuvc
+libvirt
+libwebsockets
+libwpd
+libxlsxwriter
+libxml2 ✔
+libxmlsec1
+libxslt
+lightning
+linkerd
+links
+loc
+logrotate
+logstalgia
+logstash
+logtalk
+lxc
+macosvpn
+macvim
+magic-wormhole
+mame
+mariadb
+mariadb@10.1
+maxima
+media-info
+mednafen
+menhir
+mercurial
+meson
+metabase
+metaproxy
+metricbeat
+micro
+mikutter
+minimal-racket
+minio-mc
+minisign
+minizinc
+mkvtoolnix
+mongo-c-driver
+mongoose
+monit
+mosquitto
+mpage
+mpg123
+mpw
+mutt
+mycli
+mypy
+ncmpc
+nco
+ncrack
+ncurses
+ndpi
+neatvi
+nedit
+neofetch
+netpbm
+nexus
+nghttp2
+ngspice
+nifi
+ninja
+nnn
+no-more-secrets
+node
+node-build
+node@4
+node@6
+noti
+nspr
+nsq
+nss
+numpy
+nvi
+ode
+offlineimap
+open-mpi
+openal-soft
+opencoarrays
+openjpeg
+opensaml
+openssh
+openvdb
+openvpn
+orientdb
+osc
+osm2pgrouting
+osm2pgsql
+osmfilter
+osquery
+osrm-backend
+osxutils
+ott
+overmind
+p11-kit
+packer
+packetbeat
+paket
+pandoc-citeproc
+par2
+parallel
+passenger
+pazpar2
+pc6001vx
+pcap_dnsproxy
+pdal
+pdf2svg
+pdfgrep
+pdftoedn
+pdftoipe
+pegtl
+percona-server-mongodb
+perl
+pgcli
+pgloader
+pgroonga
+pgrouting
+pick
+pilosa
+pioneer
+pktanon
+planck
+pldebugger
+pmdmini
+pony-stable
+ponyc
+ponysay
+poppler
+postgis
+povray
+pqiv
+pre-commit
+presto
+primesieve
+prometheus
+protobuf
+protobuf-swift
+psqlodbc
+pulseaudio
+pure-ftpd
+py2cairo
+py3cairo
+pybind11
+pyenv
+pyenv-virtualenv
+pygobject3
+pyinvoke
+pypy
+pypy3
+python
+python3
+qbs
+qemu
+qpdf
+qrencode
+qt
+quantlib
+quex
+r
+rclone
+rcs
+readosm
+redis
+redis@3.2
+remake
+reop
+restund
+rgbds
+rocksdb
+rom-tools
+root
+roswell
+rswift
+ruby
+ruby-build
+ruby@2.2
+ruby@2.3
+rust
+s-nail
+s6
+saldl
+saltstack
+sbcl
+sbt
+scons
+sdl2
+selenium-server-standalone
+serd
+shadowsocks-libev
+shairport-sync
+shapelib
+shared-mime-info
+shfmt
+siege
+simgrid
+simple-obfs
+sip
+skinny
+snakemake
+snap-telemetry
+snap7
+snapcraft
+sngrep
+snort
+solr
+solr@5.5
+sops
+sourcery
+sphinx-doc
+spigot
+sqlmap
+sqlparse
+ssh-copy-id
+sshguard
+stone-soup
+streamlink
+stubby
+submarine
+subversion
+svtplay-dl
+swfmill
+swift
+swiftformat
+swiftgen
+swiftlint
+swimat
+syncthing
+sysdig
+szip
+taisei
+tarantool
+taylor
+tbb
+telegraf
+teleport
+terraform
+terragrunt
+testssl
+texmath
+tig
+tippecanoe
+tmux
+tmuxinator-completion
+todolist
+tomcat
+tomcat-native
+tomcat@7
+tor
+tracebox
+translate-shell
+treefrog
+ttyd
+twemcache
+twtxt
+typescript
+ucommon
+unbound
+urh
+urlview
+vala
+vapoursynth
+varnish
+vault
+vbindiff
+vdirsyncer
+vim
+vim@7.4
+vips
+virtualpg
+vnu
+vte3
+watchexec
+webpack
+weechat
+wireguard-tools
+wireshark
+wpscan
+wxmaxima
+x265
+xa
+xalan-c
+xerces-c
+xmake
+xml-security-c
+xml-tooling-c
+xorriso
+xqilla
+xsd
+xtensor
+yarn
+yle-dl
+you-get
+youtube-dl
+zabbix
+zanata-client
+zile
+zorba
+zsh
+zstd
+==> Renamed Formulae
+gitlab-ci-multi-runner -> gitlab-runner
+gnome-icon-theme -> adwaita-icon-theme
+homebrew/php/php70-libsodium -> homebrew/php/php70-libsodium@1.0
+homebrew/php/php71-libsodium -> homebrew/php/php71-libsodium@1.0
+httpd24 -> httpd
+mobile-shell -> mosh
+thrift@0.90 -> thrift@0.9
+==> Deleted Formulae
+elixirscript       rexster            tcpurify
+htop-osx           rexster-console
+kes                solr@5.4
+
+/usr/local/Homebrew/Library/Homebrew/brew.rb:12:in `<main>': Homebrew must be run under Ruby 2.3! (RuntimeError)
+
+
+并且 最后发现 错误 Ruby 版本 过高
+
+
+
+第二步  解决版本问题
+	
+	使用 rvm  （ruby的版本管理工具）
+	列出已知的 Ruby 版本
+	rvm list known
+	查询已经安装的ruby
+
+	rvm list
+
+查询当前已经安装的ruby 发现 （Warning, new version of rvm available '1.29.3', you are using older version '1.27.0'.
+告诉我们  rvm 也有新版本可以更新 但是我们暂时 不更新 rvm 只更新 ruby
+
+）
+macserver1:~ admindyn$ rvm list
+Warning! PATH is not properly set up, '/Users/admindyn/.rvm/gems/ruby-2.3.0/bin' is not at first place,
+         usually this is caused by shell initialization files - check them for 'PATH=...' entries,
+         it might also help to re-add RVM to your dotfiles: 'rvm get stable --auto-dotfiles',
+         to fix temporarily in this shell session run: 'rvm use ruby-2.3.0'.
+
+rvm rubies
+
+=* ruby-2.3.0 [ x86_64 ]
+
+# => - current
+# =* - current && default
+#  * - default
+
+macserver1:~ admindyn$ 
+
+我们只有ruby2.3.0
+
+
+第三步 我们安装适合Brew的ruby 版本
+	
+	安装一个 Ruby 版本
+
+	rvm install 2.2.0 --disable-binary
+
+安装 过程中 还更新了一些 原先自己安装的组件
+	macserver1:~ admindyn$ rvm install 2.2.0 --disable-binary
+Warning! PATH is not properly set up, '/Users/admindyn/.rvm/gems/ruby-2.3.0/bin' is not at first place,
+         usually this is caused by shell initialization files - check them for 'PATH=...' entries,
+         it might also help to re-add RVM to your dotfiles: 'rvm get stable --auto-dotfiles',
+         to fix temporarily in this shell session run: 'rvm use ruby-2.3.0'.
+Warning, new version of rvm available '1.29.3', you are using older version '1.27.0'.
+You can disable this warning with:    echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+	Checking requirements for osx.
+	Updating Homebrew...
+	==> Upgrading 5 outdated packages, with result:
+	automake 1.15.1, openssl 1.0.2l, openssl@1.1 1.1.0f, pkg-config 0.29.2, readline 7.0.3_1
+	==> Upgrading openssl 
+	==> Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2l.s
+
+	==> Pouring openssl-1.0.2l.sierra.bottle.tar.gz
+	==> Caveats
+	A CA file has been bootstrapped using certificates from the SystemRoots
+	keychain. To add additional certificates (e.g. the certificates added in
+	the System keychain), place .pem files in
+  /usr/local/etc/openssl/certs
+
+	and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+	This formula is keg-only, which means it was not symlinked into /usr/local,
+	because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+
+	If you need to have this software first in your PATH run:
+  	echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+
+	For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/openssl/lib
+    CPPFLAGS: -I/usr/local/opt/openssl/include
+	For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/openssl/lib/pkgconfig
+
+	==> Summary
+	🍺  /usr/local/Cellar/openssl/1.0.2l: 1,709 files, 12.2MB
+	==> Upgrading openssl@1.1 
+	==> Downloading https://homebrew.bintray.com/bottles/openssl@1.1-1.1.
+	==> Pouring openssl@1.1-1.1.0f.sierra.bottle.tar.gz
+	==> Caveats
+	A CA file has been bootstrapped using certificates from the system
+	keychain. To add additional certificates, place .pem files in
+  	/usr/local/etc/openssl@1.1/certs
+
+	and run
+  	/usr/local/opt/openssl@1.1/bin/c_rehash
+
+	This formula is keg-only, which means it was not symlinked into /usr/local,
+	because this is an alternate version of another formula.
+
+	If you need to have this software first in your PATH run:
+  	echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.bash_profile
+
+	For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/openssl@1.1/lib
+    CPPFLAGS: -I/usr/local/opt/openssl@1.1/include
+	For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/openssl@1.1/lib/pkgconfig
+
+	==> Summary
+	🍺  /usr/local/Cellar/openssl@1.1/1.1.0f: 6,421 files, 15.5MB
+
+----上面是组件 Openssl 的更新--------
+
+	==> Upgrading readline 
+	==> Downloading https://homebrew.bintray.com/bottles/readline-7.0.3_1
+		==> Pouring readline-7.0.3_1.sierra.bottle.tar.gz
+	==> Caveats
+	This formula is keg-only, which means it was not symlinked into /usr/local,
+	because macOS provides the BSD libedit library, which shadows libreadline.
+	In order to prevent conflicts when programs look for libreadline we are
+	defaulting this GNU Readline installation to keg-only..
+
+	For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/readline/lib
+    CPPFLAGS: -I/usr/local/opt/readline/include
+
+	==> Summary
+	🍺  /usr/local/Cellar/readline/7.0.3_1: 46 files, 1.5MB
+
+         
+------REDLINE----
+
+
+	==> Upgrading automake 
+	==> Downloading https://homebrew.bintray.com/bottles/automake-1.15.1.
+	==> Pouring automake-1.15.1.sierra.bottle.tar.gz
+	🍺  /usr/local/Cellar/automake/1.15.1: 131 files, 3.0MB
+
+
+------AUTOMAKE-----------
+	==> Upgrading pkg-config 
+	==> Downloading https://homebrew.bintray.com/bottles/pkg-config-0.29.
+	==> Pouring pkg-config-0.29.2.sierra.bottle.tar.gz
+	🍺  /usr/local/Cellar/pkg-config/0.29.2: 11 files, 627.1KB
+
+----------PKG-CONFIG---------------
+
+	Certificates in '/usr/local/etc/openssl/cert.pem' are already up to date.
+	Requirements installation successful.
+	Installing Ruby from source to: /Users/admindyn/.rvm/rubies/ruby-2.2.0, this may take a while depending on your cpu(s)...
+	ruby-2.2.0 - #downloading ruby-2.2.0, this may take a while depending on your connection...
+
+---------这才开始安装Ruby------
+	ruby-2.2.0 - #extracting ruby-2.2.0 to /Users/admindyn/.rvm/src/ruby-2.2.0....
+	ruby-2.2.0 - #applying patch /Users/admindyn/.rvm/patches/ruby/2.2.0/fix_installing_bundled_gems.patch.
+	ruby-2.2.0 - #configuring...........................................|
+	ruby-2.2.0 - #post-configuration.
+	ruby-2.2.0 - #compiling...................................................................................
+	ruby-2.2.0 - #installing..........
+	ruby-2.2.0 - #making binaries executable..
+	ruby-2.2.0 - #downloading rubygems-2.4.8
+	ruby-2.2.0 - #extracting rubygems-2.4.8....
+	ruby-2.2.0 - #removing old rubygems.........
+	ruby-2.2.0 - #installing rubygems-2.4.8......................
+	ruby-2.2.0 - #gemset created /Users/admindyn/.rvm/gems/ruby-2.2.0@global
+	ruby-2.2.0 - #importing gemset /Users/admindyn/.rvm/gemsets/global.gems...............................................
+	ruby-2.2.0 - #generating global wrappers........
+	ruby-2.2.0 - #gemset created /Users/admindyn/.rvm/gems/ruby-2.2.0
+	ruby-2.2.0 - #importing gemsetfile /Users/admindyn/.rvm/gemsets/default.gems evaluated to empty gem list
+	ruby-2.2.0 - #generating default wrappers........
+	ruby-2.2.0 - #adjusting #shebangs for (gem irb erb ri rdoc testrb rake).
+	Install of ruby-2.2.0 - #complete 
+	Please be aware that you just installed a ruby that requires        1 patches just to be compiled on an up to date linux system.
+	This may have known and unaccounted for security vulnerabilities.
+	Please consider upgrading to ruby-2.3.0 which will have all of the latest security patches.
+	Ruby was built without documentation, to build it run: rvm docs generate-ri
+
+
+第四步 检查  更新HomeBrew 后 以前安装的组件包
+	macserver1:~ admindyn$ cd /usr/local/Cellar/
+	macserver1:Cellar admindyn$ ls -la
+	total 0
+	drwxrwxr-x  42 admindyn  admin  1428  9 14 14:47 .
+	drwxr-xr-x  31 root      wheel  1054  4 12  2017 ..
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 autoconf
+	drwxr-xr-x   4 admindyn  admin   136 10 16 11:03 automake
+	drwxr-xr-x   3 admindyn  admin   102 11 30  2016 bison
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 dnvm
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 ffmpeg
+	drwxr-xr-x   3 admindyn  admin   102  2 13  2017 flow
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 freetype
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 gettext
+	drwxr-xr-x   3 admindyn  admin   102  3 29  2017 glew
+	drwxr-xr-x   3 admindyn  admin   102  9 14 14:47 glfw
+	drwxr-xr-x   3 admindyn  admin   102  6 26 15:42 glib
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 icu4c
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 imap-uw
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 jpeg
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 lame
+	drwxr-xr-x   3 admindyn  admin   102  6 26 15:41 libffi
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 libgpg-error
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 libksba
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 libpng
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 libtool
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 libxml2
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 libyaml
+	drwxr-xr-x   3 admindyn  admin   102 11 30  2016 mcrypt
+	drwxr-xr-x   3 admindyn  admin   102 11 30  2016 mhash
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 mono
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 nginx
+	drwxr-xr-x   4 admindyn  admin   136 10 16 11:03 openssl
+	drwxr-xr-x   4 admindyn  admin   136 10 16 11:03 openssl@1.1
+	drwxr-xr-x   4 admindyn  admin   136  6 26 15:42 pcre
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 php70
+	drwxr-xr-x   4 admindyn  admin   136 10 16 11:03 pkg-config
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 postgresql
+	drwxr-xr-x   3 admindyn  admin   102 11 30  2016 re2c
+	drwxr-xr-x   4 admindyn  admin   136 10 16 11:03 readline
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 unixodbc
+	drwxr-xr-x   3 admindyn  admin   102 12 22  2016 unrar
+	drwxr-xr-x   3 admindyn  admin   102 12 28  2016 watchman
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 x264
+	drwxr-xr-x   3 admindyn  admin   102 11 16  2016 xvid
+	drwxr-xr-x   3 admindyn  admin   102 11 18  2016 yasm
+	macserver1:Cellar admindyn$ 
+
+	发现 上面更新的 除了Ruby  其余 都是HomeBrew 安装管理的
+
+	
+第五步 检查 Ruby 安装成功 并且 当前使用的ruby的版本
+	macserver1:Cellar admindyn$ ruby -v
+	ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-darwin16]
+	macserver1:Cellar admindyn$ rvm list
+
+	rvm rubies
+
+	=> ruby-2.2.0 [ x86_64 ]
+ 	* ruby-2.3.0 [ x86_64 ]
+
+	# => - current
+	# =* - current && default
+	#  * - default
+
+	macserver1:Cellar admindyn$ 
+第六步  关闭 终端 重新打开检查 ruby 版本号
+	macserver1:~ admindyn$ ruby -v
+	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-darwin16]
+	macserver1:~ admindyn$ 
+	依旧是 2.3.0 因此 之前 只是临时 切换了 ruby 版本号
+
+	切换 Ruby 版本
+
+	rvm use 2.2.0
+
+第七步  安装 svn
+
+	 我们 重新 打开终端 没有切换 ruby的 版本 号  ，安装 subversion
+	 竟然 也可以 ，那之前要求2.3.0以下版本号 为什么，难道 brew 执行
+	 过程中 有检查ruby版本号 和 切换版本号 操作
+
+	 macserver1:~ admindyn$ brew install subversion@1.8
+	Updating Homebrew...
+	==> Auto-updated Homebrew!
+	Updated 1 tap (caskroom/cask).
+	No changes to formulae.
+
+	==> Installing dependencies for subversion@1.8: apr, apr-util, sqlite
+
+--------安装 apr-------
+	==> Installing subversion@1.8 dependency: apr
+	==> Downloading https://homebrew.bintray.com/bottles/apr
+
+
+	==> Pouring apr-1.6.2_1.sierra.bottle.tar.gz
+	==> Caveats
+	This formula is keg-only, which means it was not symlinked into /usr/local,
+	because Apple's CLT package contains apr.
+
+	If you need to have this software first in your PATH run:
+  	echo 'export PATH="/usr/local/opt/apr/bin:$PATH"' >> ~/.bash_profile
+
+	==> Summary
+	🍺  /usr/local/Cellar/apr/1.6.2_1: 60 files, 1.3MB
+
+
+--------安装 apr-util-------
+	==> Installing subversion@1.8 dependency: apr-util
+	==> Downloading https://homebrew.bintray.com/bottles/apr
+
+	==> Pouring apr-util-1.6.0_1.sierra.bottle.tar.gz
+	==> Caveats
+	This formula is keg-only, which means it was not symlinked into /usr/local,
+	because Apple's CLT package contains apr.
+
+	If you need to have this software first in your PATH run:
+  	echo 'export PATH="/usr/local/opt/apr-util/bin:$PATH"' >> ~/.bash_profile
+
+	==> Summary
+	🍺  /usr/local/Cellar/apr-util/1.6.0_1: 54 files, 777.6KB
+
+
+
+--------安装 sqlite-------
+	==> Installing subversion@1.8 dependency: sqlite
+	==> Downloading https://homebrew.bintray.com/bottles/sql
+
+	==> Pouring sqlite-3.20.1.sierra.bottle.tar.gz
+	==> Caveats
+	This formula is keg-only, which means it was not symlinked into /usr/local,
+	because macOS provides an older sqlite3.
+
+	If you need to have this software first in your PATH run:
+  	echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.bash_profile
+
+	For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/sqlite/lib
+    CPPFLAGS: -I/usr/local/opt/sqlite/include
+	For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/sqlite/lib/pkgconfig
+
+	==> Summary
+	🍺  /usr/local/Cellar/sqlite/3.20.1: 11 files, 3.0MB
+	==> Installing subversion@1.8
+	==> Downloading https://homebrew.bintray.com/bottles/sub
+
+
+
+------前面 安装Subversion 依赖的组件  下面 才开始 安装 subversion---------
+
+	==> Pouring subversion@1.8-1.8.16.sierra.bottle.tar.gz
+	==> Caveats
+	svntools have been installed to:
+  	/usr/local/opt/subversion@1.8/libexec
+
+	This formula is keg-only, which means it was not symlinked into /usr/local,
+	because this is an alternate version of another formula.
+
+	If you need to have this software first in your PATH run:
+  	echo 'export PATH="/usr/local/opt/subversion@1.8/bin:$PATH"' >> ~/.bash_profile
+
+	For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/subversion@1.8/lib
+    CPPFLAGS: -I/usr/local/opt/subversion@1.8/include
+
+
+	Bash completion has been installed to:
+  	/usr/local/etc/bash_completion.d
+	==> Summary
+	🍺  /usr/local/Cellar/subversion@1.8/1.8.16: 128 files, 9.2MB
+	macserver1:~ admindyn$ 
+
+
+第八步  检查svn 安装成功  ，关闭 终端 重新 打开终端 
+	macserver1:~ admindyn$ svn --version
+	svn, version 1.9.4 (r1740329)
+ 	  compiled Apr 10 2017, 20:36:46 on x86_64-apple-darwin15.0.0
+
+	Copyright (C) 2016 The Apache Software Foundation.
+	This software consists of contributions made by many people;
+	see the NOTICE file for more information.
+	Subversion is open source software, see http://subversion.apache.org/
+
+	The following repository access (RA) modules are available:
+
+	* ra_svn : Module for accessing a repository using the svn network protocol.
+  - handles 'svn' scheme
+	* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+	* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.8 (compiled with 1.3.8)
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+	The following authentication credential caches are available:
+
+	*	 Plaintext cache in /Users/admindyn/.subversion
+	* GPG-Agent
+	* Mac OS X Keychain
+
+	macserver1:~ admindyn$
+	macserver1:~ admindyn$ svn --version --quiet
+	1.9.4
+	macserver1:~ admindyn$ 
+
+	检查 发现  我们 刚才 看到 的svn 版本号 是之前 可视化客户端
+	莲花 安装的 残留
+
+	这里 才是我们最新安装的svn
+
+		macserver1:~ admindyn$ which svn
+		/usr/bin/svn
+		macserver1:bin admindyn$ svn --version --quiet
+		1.9.4
+		macserver1:~ admindyn$ cd /usr/local/opt/subversion@1.8/bin
+		macserver1:bin admindyn$ ./svn --version --quiet
+		1.8.16
+		macserver1:bin admindyn$ 
+	因为 我们 没有 把 安装后的 svn 路径  添加到 环境变量里去
+
+以后 尝试 写 svn  脚本 提交代码  基本 功能
+
+
+第十步  找到 svn 免费软件 smartsvn  收费版本  但是 过了试用期 后 提供基本功能 
+	 还可以使用  基本功能
+
+
+
+
